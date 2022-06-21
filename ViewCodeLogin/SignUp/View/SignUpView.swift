@@ -149,15 +149,16 @@ class SignUpView: UIView {
     
     public func validateTextField() {
         if emailTextField.text != "" && passwordTextField.text != "" && confirmTextField.text != "" {
-            if passwordTextField.text != confirmTextField.text{
+            if passwordTextField.text == confirmTextField.text {
                 self.enableButton(true)
-            }
-            
-        } else {
+            } else {
+                if passwordTextField.text != confirmTextField.text{
+                confirmTextField.layer.borderColor = UIColor.red.cgColor
             self.enableButton(false)
         }
     }
-    
+}
+    }
     private func enableButton(_ enable: Bool) {
         if enable {
             self.registerButton.isEnabled = true

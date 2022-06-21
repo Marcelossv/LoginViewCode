@@ -57,9 +57,13 @@ extension LoginViewController: LoginViewProtocol {
                 if user == nil {
                     self.alert?.setup(title: "Ops", message: "Something Wrong")
                 } else {
-                    DispatchQueue.main.async {
-                        let vc = FirstScreenViewController()
-                        self.navigationController?.pushViewController(vc, animated: true)
+                    self.loginView?.loginButton.startAnimation()
+                    DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+                        self.loginView?.loginButton.stopAnimation(animationStyle:.normal, revertAfterDelay: 0){
+                            let vc = FirstScreenViewController()
+                            self.navigationController?.pushViewController(vc, animated: true)
+                        }
+                        
                     }
                 }
             }

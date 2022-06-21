@@ -72,14 +72,15 @@ class LoginView: UIView {
         return button
     }()
     
-    lazy var loginButton: UIButton = {
-        let button = UIButton()
+    lazy var loginButton: TransitionButton = {
+        let button = TransitionButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Login", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         button.addTarget(self, action: #selector(self.tappedLoginButtonAction), for: .touchUpInside)
         button.backgroundColor = .orange
         button.layer.cornerRadius = 7
+        button.spinnerColor = .white
         return button
     }()
     

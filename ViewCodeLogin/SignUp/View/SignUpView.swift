@@ -141,7 +141,7 @@ class SignUpView: UIView {
     
     public func validateTextField() {
         if emailTextField.text != "" && passwordTextField.text != "" && confirmTextField.text != "" {
-            if passwordTextField.text != confirmTextField.text {
+            if passwordTextField.text != confirmTextField.text{
                 self.enableButton(true)
             }
             

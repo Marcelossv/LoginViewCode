@@ -61,7 +61,6 @@ class LoginView: UIView {
         textField.borderStyle = .roundedRect
         textField.layer.borderColor = UIColor.lightGray.cgColor
         textField.textColor = .darkGray
-        textField.isSecureTextEntry = true
         return textField
         }()
     

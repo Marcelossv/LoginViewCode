@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import ShowPasswordTextField
+
 
 protocol SignUpViewProtocol: AnyObject {
     func tappedRegisterAction()
@@ -55,8 +57,11 @@ class SignUpView: UIView {
         return textField
     }()
     
-    lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
+    lazy var passwordTextField: ShowPasswordTextField = {
+        let textField = ShowPasswordTextField(frame: CGRect(x: 0, y: 0, width: 240, height: 44))
+        textField.borderStyle = .bezel
+        textField.tintIconColor = .systemIndigo
+        textField.sizeIcon = 26
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.keyboardType = .emailAddress
         textField.autocapitalizationType = .none
@@ -70,8 +75,11 @@ class SignUpView: UIView {
         return textField
     }()
 
-    lazy var confirmTextField: UITextField = {
-        let textField = UITextField()
+    lazy var confirmTextField: ShowPasswordTextField = {
+        let textField = ShowPasswordTextField(frame: CGRect(x: 0, y: 0, width: 240, height: 44))
+        textField.borderStyle = .bezel
+        textField.tintIconColor = .systemIndigo
+        textField.sizeIcon = 26
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.borderStyle = .roundedRect
         textField.backgroundColor = .white

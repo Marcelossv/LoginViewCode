@@ -46,8 +46,11 @@ class LoginView: UIView {
         return textField
         }()
     
-    lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
+    lazy var passwordTextField: ShowPasswordTextField = {
+        let textField = ShowPasswordTextField(frame: CGRect(x: 0, y: 0, width: 240, height: 44))
+        textField.borderStyle = .bezel
+        textField.tintIconColor = .systemIndigo
+        textField.sizeIcon = 26
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.autocorrectionType = .no
         textField.backgroundColor = .white
@@ -58,6 +61,7 @@ class LoginView: UIView {
         textField.borderStyle = .roundedRect
         textField.layer.borderColor = UIColor.lightGray.cgColor
         textField.textColor = .darkGray
+        textField.isSecureTextEntry = true
         return textField
         }()
     

@@ -8,6 +8,8 @@ target 'ViewCodeLogin' do
   # Pods for ViewCodeLogin
 
 pod 'FirebaseAuth'
+pod 'TransitionButton'
+pod 'ShowPasswordTextField'
 
 
 end

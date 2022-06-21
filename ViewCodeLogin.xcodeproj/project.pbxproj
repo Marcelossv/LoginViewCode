@@ -22,8 +22,6 @@
 		310B281728612D240030F12A /* FirstScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B281428612D240030F12A /* FirstScreenView.swift */; };
 		310B281828612D240030F12A /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B281628612D240030F12A /* FirstScreenViewController.swift */; };
 		310B281B28612D2D0030F12A /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B281A28612D2D0030F12A /* AlertController.swift */; };
-		310B281F28612D440030F12A /* UserResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B281D28612D440030F12A /* UserResponseDto.swift */; };
-		310B282028612D440030F12A /* CallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B281E28612D440030F12A /* CallBack.swift */; };
 		310B282228612EE80030F12A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 310B282128612EE80030F12A /* GoogleService-Info.plist */; };
 		B5589573DA2198C5E2050681 /* Pods_ViewCodeLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4065CAF12B93183239E5E818 /* Pods_ViewCodeLogin.framework */; };
 /* End PBXBuildFile section */
@@ -47,8 +45,6 @@
 		310B281428612D240030F12A /* FirstScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenView.swift; sourceTree = "<group>"; };
 		310B281628612D240030F12A /* FirstScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		310B281A28612D2D0030F12A /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
-		310B281D28612D440030F12A /* UserResponseDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserResponseDto.swift; sourceTree = "<group>"; };
-		310B281E28612D440030F12A /* CallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallBack.swift; sourceTree = "<group>"; };
 		310B282128612EE80030F12A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4065CAF12B93183239E5E818 /* Pods_ViewCodeLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD3A02E4B66153723DF1377 /* Pods-ViewCodeLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeLogin.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeLogin/Pods-ViewCodeLogin.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +83,6 @@
 		310B27E828612B9E0030F12A /* ViewCodeLogin */ = {
 			isa = PBXGroup;
 			children = (
-				310B281C28612D440030F12A /* Firebase */,
 				310B281928612D2D0030F12A /* AlertController */,
 				310B281228612D240030F12A /* LoginSucess */,
 				310B280B28612D1D0030F12A /* SignUp */,
@@ -211,15 +206,6 @@
 				310B281A28612D2D0030F12A /* AlertController.swift */,
 			);
 			path = AlertController;
-			sourceTree = "<group>";
-		};
-		310B281C28612D440030F12A /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				310B281D28612D440030F12A /* UserResponseDto.swift */,
-				310B281E28612D440030F12A /* CallBack.swift */,
-			);
-			path = Firebase;
 			sourceTree = "<group>";
 		};
 		4E6D248FACD82E59202B60EB /* Frameworks */ = {
@@ -356,12 +342,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				310B27EE28612B9E0030F12A /* ViewController.swift in Sources */,
-				310B281F28612D440030F12A /* UserResponseDto.swift in Sources */,
 				310B27EA28612B9E0030F12A /* AppDelegate.swift in Sources */,
 				310B280228612D0C0030F12A /* LoginView.swift in Sources */,
 				310B281728612D240030F12A /* FirstScreenView.swift in Sources */,
 				310B281B28612D2D0030F12A /* AlertController.swift in Sources */,
-				310B282028612D440030F12A /* CallBack.swift in Sources */,
 				310B280928612D160030F12A /* ResetPasswordView.swift in Sources */,
 				310B281028612D1D0030F12A /* SignUpView.swift in Sources */,
 				310B280328612D0C0030F12A /* LoginViewController.swift in Sources */,

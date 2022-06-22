@@ -1,6 +1,6 @@
 # LoginViewCode
 
-full flow login screen with validations
+Full flow login screen with validations
 
 ## Used Technologies:
   🔹View Code

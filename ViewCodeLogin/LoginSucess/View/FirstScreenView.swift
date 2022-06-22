@@ -33,7 +33,7 @@ class FirstScreenView: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(self.tappedLogout),for: .touchUpInside)
-        button.setTitle("Logout", for: .normal)
+        button.setTitle("Log out", for: .normal)
         button.layer.cornerRadius = 7
         button.titleLabel?.font = UIFont.systemFont(ofSize: 25)
         button.setTitleColor(UIColor.orange, for: .normal)
